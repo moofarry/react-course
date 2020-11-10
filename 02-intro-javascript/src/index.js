@@ -1,5 +1,5 @@
 
-const personajes = ['Goku', 'Vegeta', 'Trunks'];
+const personajes = ['Goku', 'Vegeta', 'Trunks, Bulma'];
 
 const [ p1 ] = personajes;
 
