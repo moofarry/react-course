@@ -17,7 +17,6 @@ const useContext = ({ clave, nombre, edad, rango = 'Capitán' }) => {
 
 
   // console.log( nombre, edad, rango );
-  
   return {
       nombreClave: clave,
       anios: edad,
@@ -26,12 +25,10 @@ const useContext = ({ clave, nombre, edad, rango = 'Capitán' }) => {
           lng: -12.3232
       }
   }
-
 }
 
 const { nombreClave, anios, latlng: { lat, lng } } = useContext( persona );
 
 console.log(nombreClave, anios);
 console.log( lat, lng );
-
 
