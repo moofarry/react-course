@@ -12,6 +12,7 @@ const retornarArreglo = () => {
 const [ , , caracteres] = retornarArreglo();
 console.log(caracteres);
 
+console.log("TAREA ")
 /**Tarea
  *1. el primer valor de arr se llamará nombre
  *2. se llamará setNombre
@@ -24,6 +25,5 @@ const useState = (valor) => {
 }
 
 const [nombre, setNombre] = useState('Goku');
-
 console.log(nombre);
 setNombre();
