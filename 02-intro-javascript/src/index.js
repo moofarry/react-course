@@ -1,4 +1,3 @@
-
 const personajes = ['Goku', 'Vegeta', 'Trunks'];
 
 const [ , , p3 ] = personajes;
@@ -17,6 +16,8 @@ console.log("TAREA ==>")
  *1. el primer valor de arr se llamará nombre
  *2. se llamará setNombre
  */
+
+
 const useState = ( valor ) => {
   return [ valor, ()=>{ console.log('Hola Mundo') } ];
 }
