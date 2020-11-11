@@ -17,13 +17,11 @@ console.log("TAREA ==>")
  *1. el primer valor de arr se llamará nombre
  *2. se llamará setNombre
  */
-const useState = (valor) => {
-  return [ valor, () => {
-    console.log("Hola mundo");
-  }
-  ]
+const useState = ( valor ) => {
+  return [ valor, ()=>{ console.log('Hola Mundo') } ];
 }
 
-const [nombre, setNombre] = useState('Goku');
-console.log(nombre);
+const [ nombre, setNombre ] = useState( 'Goku' );
+
+console.log( nombre );
 setNombre();
