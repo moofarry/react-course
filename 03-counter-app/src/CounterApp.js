@@ -1,15 +1,25 @@
-import React from 'react';
+import React, {useState} from 'react'; //hook useState
 import PropTypes from 'prop-types';
 // import React, { Fragment } from 'react';
+//fucnion por referencia
 
-const CounterApp = ({ value }) => {
+const CounterApp = ({ value= 10 }) => {
 
-  return (
-      <>
+    const [counter , setCounter] = useState(value); // retorna arreglo
+
+    const handleAddFunc = () => setCounter(counter+1);
+    const handleAddBackFunc = () => setCounter(counter-1    );
+    const handleAddResetFunc = () =>  setCounter( value);
+
+    return (
+      <div>
           <h1> CounterApp </h1>
           {/* <pre> {  JSON.stringify( saludo, null, 3 )  } </pre> */}
-          <h2> {value}</h2>
-      </>
+          <h2> {counter}</h2>
+          <button onClick= { handleAddFunc }> + 1 </button> 
+          <button onClick= { handleAddResetFunc }> Reset </button> 
+          <button onClick= { handleAddBackFunc }> - 1 </button> 
+      </div>
   );
 }
 

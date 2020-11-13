@@ -7,7 +7,7 @@ import './index.css'
 //const saludo = <h1> Hola Mundo</h1> ;
 const divRoot = document.querySelector('#root');
 
-const cedula = 1144088409;
+const cedula = 5;
 
 
 ReactDOM.render( <CounterApp value={cedula} />, divRoot );
